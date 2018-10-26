@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <!--点击的时候, state_pressed = true代表状态是, 点击之后显示这个图片-->
+    <item android:drawable="@drawable/nav_main_click" android:state_pressed="true"></item>
+    <!--没有点击的时候的-->
+    <item android:drawable="@drawable/nav_main_normal"></item>
+
+
+
+
+</selector>
