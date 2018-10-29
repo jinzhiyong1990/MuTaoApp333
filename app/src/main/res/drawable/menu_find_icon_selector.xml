@@ -3,7 +3,8 @@
 
 
 
-    <item android:drawable="@drawable/nav_find_normal"></item>
-    <item android:drawable="@drawable/nav_find_click" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/nav_find_click" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/nav_find_normal"></item>
+
 
 </selector>

@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!--这里头的设置, 主activiy变成了LinearLayout的形式, 并且ori=vertical
+之后, 设置下面的内容weight=1, 之后高度变成0, 但是下面的功能菜单的不变
+解决的问题: 滑动菜单, 不能拉到最下面, -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".util.MainActivity"
+    android:orientation="vertical"
     >
 
     <!--内容-->
     <RelativeLayout
         android:id="@+id/container_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
 
 
@@ -29,12 +35,13 @@
         android:orientation="horizontal"
         android:background="#ffffff"
         android:layout_alignParentBottom="true"
+
         >
 
         <!--Menu-->
         <LinearLayout
             android:id="@+id/menu_main"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
@@ -59,7 +66,7 @@
         <!--发现-->
         <LinearLayout
             android:id="@+id/menu_find"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
@@ -86,7 +93,7 @@
         <!--Menu-->
         <LinearLayout
             android:id="@+id/menu_me"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
@@ -117,4 +124,4 @@
 
 
 
-</RelativeLayout>
+</LinearLayout>

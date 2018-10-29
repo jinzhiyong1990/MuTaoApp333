@@ -4,12 +4,11 @@
 
 
 
+    <!--这个state_pressed=true 必须在上面-->
+    <!--虽然不知道为什么???-->
     <!--点击的时候, state_pressed = true代表状态是, 点击之后显示这个图片-->
-    <item android:drawable="@drawable/nav_main_click" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/nav_main_click" android:state_pressed="true"></item>
     <!--没有点击的时候的-->
-    <item android:drawable="@drawable/nav_main_normal"></item>
-
-
-
+    <item android:drawable="@mipmap/nav_main_normal"></item>
 
 </selector>
